@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toko Buku Muhammad Akbar - Temukan Buku Impian Anda</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="nav-logo">
+                    <i class="fas fa-book-open"></i>
+                    <span>Toko Buku Muhammad Akbar</span>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="#beranda" class="nav-link">Beranda</a></li>
+                    <li><a href="#katalog" class="nav-link">Katalog</a></li>
+                    <li><a href="#tentang" class="nav-link">Tentang</a></li>
+                    <li><a href="#kontak" class="nav-link">Kontak</a></li>
+                </ul>
+                <div class="nav-cart">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span class="cart-count">0</span>
+                </div>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="beranda" class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <h1 class="hero-title">Selamat Datang di Toko Buku Muhammad Akbar</h1>
+                <p class="hero-subtitle">Temukan ribuan buku berkualitas untuk menambah wawasan dan pengetahuan Anda</p>
+                <div class="hero-buttons">
+                    <a href="#katalog" class="btn btn-primary">Lihat Katalog</a>
+                    <a href="#tentang" class="btn btn-secondary">Pelajari Lebih Lanjut</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="book-stack">
+                    <div class="book book-1"></div>
+                    <div class="book book-2"></div>
+                    <div class="book book-3"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features">
+        <div class="container">
+            <h2 class="section-title">Mengapa Memilih Kami?</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-shipping-fast"></i>
+                    </div>
+                    <h3>Pengiriman Cepat</h3>
+                    <p>Pengiriman dalam 1-2 hari kerja ke seluruh Indonesia</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3>Garansi 100%</h3>
+                    <p>Jaminan kualitas buku dan pengembalian uang jika tidak puas</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-headset"></i>
+                    </div>
+                    <h3>Layanan 24/7</h3>
+                    <p>Customer service siap membantu Anda kapan saja</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-percentage"></i>
+                    </div>
+                    <h3>Diskon Terbaik</h3>
+                    <p>Harga terbaik dengan diskon menarik setiap hari</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Catalog Section -->
+    <section id="katalog" class="catalog">
+        <div class="container">
+            <h2 class="section-title">Katalog Buku Terpopuler</h2>
+            <div class="category-tabs">
+                <button class="tab-btn active" data-category="semua">Semua</button>
+                <button class="tab-btn" data-category="novel">Novel</button>
+                <button class="tab-btn" data-category="pendidikan">Pendidikan</button>
+                <button class="tab-btn" data-category="bisnis">Bisnis</button>
+                <button class="tab-btn" data-category="anak">Anak-anak</button>
+            </div>
+            <div class="books-grid">
+                <div class="book-card" data-category="novel">
+                    <div class="book-image">
+                        <img src="https://via.placeholder.com/200x280/4F46E5/FFFFFF?text=Novel+1" alt="Novel 1">
+                        <div class="book-overlay">
+                            <button class="btn-quick-view">Lihat Detail</button>
+                        </div>
+                    </div>
+                    <div class="book-info">
+                        <h3>Laskar Pelangi</h3>
+                        <p class="book-author">Andrea Hirata</p>
+                        <div class="book-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <span>(4.8)</span>
+                        </div>
+                        <div class="book-price">
+                            <span class="price-new">Rp 85.000</span>
+                            <span class="price-old">Rp 120.000</span>
+                        </div>
+                        <button class="btn-add-cart">Tambah ke Keranjang</button>
+                    </div>
+                </div>
+
+                <div class="book-card" data-category="pendidikan">
+                    <div class="book-image">
+                        <img src="https://via.placeholder.com/200x280/10B981/FFFFFF?text=Pendidikan+1" alt="Pendidikan 1">
+                        <div class="book-overlay">
+                            <button class="btn-quick-view">Lihat Detail</button>
+                        </div>
+                    </div>
+                    <div class="book-info">
+                        <h3>Matematika Dasar</h3>
+                        <p class="book-author">Prof. Dr. Ahmad</p>
+                        <div class="book-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                            <span>(4.2)</span>
+                        </div>
+                        <div class="book-price">
+                            <span class="price-new">Rp 95.000</span>
+                            <span class="price-old">Rp 150.000</span>
+                        </div>
+                        <button class="btn-add-cart">Tambah ke Keranjang</button>
+                    </div>
+                </div>
+
+                <div class="book-card" data-category="bisnis">
+                    <div class="book-image">
+                        <img src="https://via.placeholder.com/200x280/F59E0B/FFFFFF?text=Bisnis+1" alt="Bisnis 1">
+                        <div class="book-overlay">
+                            <button class="btn-quick-view">Lihat Detail</button>
+                        </div>
+                    </div>
+                    <div class="book-info">
+                        <h3>Startup Guide</h3>
+                        <p class="book-author">Sarah Johnson</p>
+                        <div class="book-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <span>(4.9)</span>
+                        </div>
+                        <div class="book-price">
+                            <span class="price-new">Rp 125.000</span>
+                            <span class="price-old">Rp 180.000</span>
+                        </div>
+                        <button class="btn-add-cart">Tambah ke Keranjang</button>
+                    </div>
+                </div>
+
+                <div class="book-card" data-category="anak">
+                    <div class="book-image">
+                        <img src="https://via.placeholder.com/200x280/EC4899/FFFFFF?text=Anak+1" alt="Anak 1">
+                        <div class="book-overlay">
+                            <button class="btn-quick-view">Lihat Detail</button>
+                        </div>
+                    </div>
+                    <div class="book-info">
+                        <h3>Cerita Rakyat Nusantara</h3>
+                        <p class="book-author">Budi Santoso</p>
+                        <div class="book-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <span>(4.7)</span>
+                        </div>
+                        <div class="book-price">
+                            <span class="price-new">Rp 65.000</span>
+                            <span class="price-old">Rp 90.000</span>
+                        </div>
+                        <button class="btn-add-cart">Tambah ke Keranjang</button>
+                    </div>
+                </div>
+
+                <div class="book-card" data-category="novel">
+                    <div class="book-image">
+                        <img src="https://via.placeholder.com/200x280/8B5CF6/FFFFFF?text=Novel+2" alt="Novel 2">
+                        <div class="book-overlay">
+                            <button class="btn-quick-view">Lihat Detail</button>
+                        </div>
+                    </div>
+                    <div class="book-info">
+                        <h3>Bumi Manusia</h3>
+                        <p class="book-author">Pramoedya Ananta Toer</p>
+                        <div class="book-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <span>(4.9)</span>
+                        </div>
+                        <div class="book-price">
+                            <span class="price-new">Rp 110.000</span>
+                            <span class="price-old">Rp 160.000</span>
+                        </div>
+                        <button class="btn-add-cart">Tambah ke Keranjang</button>
+                    </div>
+                </div>
+
+                <div class="book-card" data-category="pendidikan">
+                    <div class="book-image">
+                        <img src="https://via.placeholder.com/200x280/06B6D4/FFFFFF?text=Pendidikan+2" alt="Pendidikan 2">
+                        <div class="book-overlay">
+                            <button class="btn-quick-view">Lihat Detail</button>
+                        </div>
+                    </div>
+                    <div class="book-info">
+                        <h3>Fisika Modern</h3>
+                        <p class="book-author">Dr. Maria Garcia</p>
+                        <div class="book-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                            <span>(4.3)</span>
+                        </div>
+                        <div class="book-price">
+                            <span class="price-new">Rp 135.000</span>
+                            <span class="price-old">Rp 200.000</span>
+                        </div>
+                        <button class="btn-add-cart">Tambah ke Keranjang</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="tentang" class="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <h2 class="section-title">Tentang Toko Buku Muhammad Akbar</h2>
+                    <p>Didirikan pada tahun 2020, Toko Buku Muhammad Akbar telah menjadi destinasi utama bagi pecinta buku di seluruh Indonesia. Kami berkomitmen untuk menyediakan buku berkualitas dengan harga terjangkau.</p>
+                    <p>Dengan koleksi lebih dari 10.000 judul buku dari berbagai kategori, kami memastikan setiap pelanggan menemukan buku yang sesuai dengan minat dan kebutuhan mereka.</p>
+                    <div class="about-stats">
+                        <div class="stat-item">
+                            <h3>10.000+</h3>
+                            <p>Judul Buku</p>
+                        </div>
+                        <div class="stat-item">
+                            <h3>50.000+</h3>
+                            <p>Pelanggan Puas</p>
+                        </div>
+                        <div class="stat-item">
+                            <h3>3 Tahun</h3>
+                            <p>Pengalaman</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <img src="https://via.placeholder.com/500x400/6366F1/FFFFFF?text=Toko+Buku+Muhammad+Akbar" alt="Toko Buku Muhammad Akbar">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="kontak" class="contact">
+        <div class="container">
+            <h2 class="section-title">Hubungi Kami</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>Alamat</h3>
+                            <p>Jl. Ende-Bajawa Km21<br>Ende, MAKN Ende</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>Telepon</h3>
+                            <p>+62 851-9140-0714<br>+62 812 3456 7890</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>Email</h3>
+                            <p>info@tokobukumuhammadakbar.com<br>cs@tokobukumuhammadakbar.com</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>Jam Operasional</h3>
+                            <p>Senin - Jumat: 08:00 - 21:00<br>Sabtu - Minggu: 09:00 - 22:00</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <form>
+                        <div class="form-group">
+                            <input type="text" placeholder="Nama Lengkap" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" placeholder="Email" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="tel" placeholder="Nomor Telepon" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea placeholder="Pesan Anda" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Kirim Pesan</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <i class="fas fa-book-open"></i>
+                        <span>Toko Buku Muhammad Akbar</span>
+                    </div>
+                    <p>Menyediakan buku berkualitas dengan harga terjangkau untuk semua kalangan.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h3>Kategori Buku</h3>
+                    <ul>
+                        <li><a href="#">Novel</a></li>
+                        <li><a href="#">Pendidikan</a></li>
+                        <li><a href="#">Bisnis</a></li>
+                        <li><a href="#">Anak-anak</a></li>
+                        <li><a href="#">Agama</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Layanan</h3>
+                    <ul>
+                        <li><a href="#">Pengiriman</a></li>
+                        <li><a href="#">Pembayaran</a></li>
+                        <li><a href="#">Garansi</a></li>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Bantuan</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Informasi</h3>
+                    <ul>
+                        <li><a href="#">Tentang Kami</a></li>
+                        <li><a href="#">Kebijakan Privasi</a></li>
+                        <li><a href="#">Syarat & Ketentuan</a></li>
+                        <li><a href="#">Kontak</a></li>
+                        <li><a href="#">Karir</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Toko Buku Muhammad Akbar. Semua hak dilindungi.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html> 
